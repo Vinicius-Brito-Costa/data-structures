@@ -15,5 +15,5 @@ This repository will hold all the code samples I'have created for this journey, 
     - [Array Implementation](/stack/python/stack_array_implementation.py)
     - [Linked List Implementation](/stack/python/stack_linked_list_implementation.py)
   - Java:
-    - [Array Implementation]
-    - [Linked List Implementation]
+    - [Array Implementation](/stack/java/Stack/src/main/java/org/example/StackArrayImplementation.java)
+    - [Linked List Implementation](/stack/java/Stack/src/main/java/org/example/StackLinkedListImplementation.java)
