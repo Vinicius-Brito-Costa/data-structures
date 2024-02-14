@@ -18,3 +18,6 @@ This repository will hold all the code samples I'have created for this journey, 
   - Java:
     - [Array Implementation](/stack/java/Stack/src/main/java/org/example/StackArrayImplementation.java)
     - [Linked List Implementation](/stack/java/Stack/src/main/java/org/example/StackLinkedListImplementation.java)
+- Queue
+  - Javascript:
+    - [Implementation](/queue/javascript/QueueImplementation.js)
