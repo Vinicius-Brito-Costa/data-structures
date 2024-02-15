@@ -1,15 +1,14 @@
 {
-  "name": "queue",
+  "name": "linked_list",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "queueImplementation.js",
+  "main": "linkedListImplementation.js",
   "scripts": {
     "test": "jest ."
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }

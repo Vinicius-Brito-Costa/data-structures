@@ -21,3 +21,6 @@ This repository will hold all the code samples I'have created for this journey, 
 - Queue
   - Javascript:
     - [Implementation](/queue/javascript/queueImplementation.js)
+- LinkedList
+  - Javascript:
+    - [Implementation](/linked_list/javascript/queueImplementation.js)
