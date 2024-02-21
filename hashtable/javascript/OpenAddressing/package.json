@@ -1,0 +1,12 @@
+{
+  "name": "open_addressing",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "openAddressing.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "author": "",
+  "license": "ISC"
+}

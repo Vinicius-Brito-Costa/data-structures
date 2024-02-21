@@ -24,3 +24,8 @@ This repository will hold all the code samples I'have created for this journey, 
 - LinkedList
   - Javascript:
     - [Implementation](/linked_list/javascript/linkedListImplementation.js)
+
+- Hashtable
+  - Javascript:
+    - [Separate Chaining](/hashtable/javascript/separateChaining.js)
+    - [Open Addressing](/hashtable/javascript/openAddressing.js)

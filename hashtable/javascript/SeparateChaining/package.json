@@ -1,0 +1,12 @@
+{
+  "name": "separate_chaining",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "separateChaining.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "author": "",
+  "license": "ISC"
+}
