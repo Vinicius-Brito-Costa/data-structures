@@ -30,13 +30,27 @@ class HashtableNode {
     setValue(value){
         this.#value = value
     }
+    toJSON(){
+        let next = null
+        if (this.#next){
+            next = this.#next.toJSON()
+        }
+        return {
+            originalKey: this.#originalKey,
+            value: this.#value,
+            next: next
+        }
+    }
 }
 
 class Hashtable {
     #listLimit = 10
     #table = []
 
-    constructor(){
+    constructor(limit){
+        if(typeof limit == Number && limit > 0){
+            this.#listLimit = limit
+        }
         for (let index = 0; index < this.#listLimit; index++){
             this.#table.push(new HashtableNode())
         }
@@ -111,14 +125,15 @@ class Hashtable {
         index *= key.length - (key.length % 2 == 0 ? 1 : 0)
         return index % this.#listLimit
     }
+
+    toJSON(){
+        let table = []
+        this.#table.forEach(item => table.push(item.toJSON()))
+        return {
+            listLimit: this.#listLimit,
+            table: table
+        }
+    }
 }
 
-let hashtable = new Hashtable()
-
-hashtable.add("olá, mudo", "12345")
-hashtable.add("olmundo.", "123")
-hashtable.add("olá! !", "1234")
-
-console.log(`olá, mudo -> ${hashtable.hash("olá, mudo")} -> ${hashtable.get("olá, mudo")}`)
-console.log(`olmundo. -> ${hashtable.hash("olmundo.")} -> ${hashtable.get("olmundo.")}`)
-console.log(`olá! ! -> ${hashtable.hash("olá! !")} -> ${hashtable.get("olá! !")}`)
+module.exports = Hashtable
