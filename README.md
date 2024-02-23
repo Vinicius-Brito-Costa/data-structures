@@ -28,4 +28,4 @@ This repository will hold all the code samples I'have created for this journey, 
 - Hashtable
   - Javascript:
     - [Separate Chaining](/hashtable/javascript/SeparateChaining/separateChaining.js)
-    - [Open Addressing](/hashtable/javascript/OpenAddressing/openAddressing.js)
+    - [Open Addressing - Double Hash](/hashtable/javascript/OpenAddressing/openAddressingDoubleHash.js)

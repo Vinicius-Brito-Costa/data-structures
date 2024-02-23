@@ -48,7 +48,7 @@ class Hashtable {
     #table = []
 
     constructor(limit){
-        if(typeof limit == Number && limit > 0){
+        if(typeof limit == 'number' && limit > 0){
             this.#listLimit = limit
         }
         for (let index = 0; index < this.#listLimit; index++){
