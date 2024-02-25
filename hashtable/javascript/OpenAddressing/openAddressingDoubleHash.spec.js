@@ -17,6 +17,23 @@ test('Trying to add a different value on the same key will update it', () => {
 
 })
 
+test('Cannot surpass the limit', () => {
+    let hashtable = new Hashtable(5)
+
+    let size = 0
+    for(let index = 0; index < 100; index++){
+        hashtable.add(`added-${index}`, `index-${index}`)
+        if(index == 4){
+            size = getSizeInBytes(hashtable)
+        }
+    }
+    expect(getSizeInBytes(hashtable)).toBe(size)
+
+    for(let index = 5; index < 100; index++){
+        expect(hashtable.get(`added-${index}`)).toBe(null)
+    }
+})
+
 test('All added itens are retrivable', () => {
     let hashtable = new Hashtable(100)
     
